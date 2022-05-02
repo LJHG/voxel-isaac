@@ -33,8 +33,6 @@ def create_column(pos1, pos2, size, interpolate=10):
                             pos1[2] + i*(pos2[2]-pos1[2])/interpolate),
                             (size,size,size),vec3(0.788,0.627,0.666))
     
-
-
 def head():
     color = vec3(0.788,0.627,0.666) # 201 160 170
     pos = (0,0,0)
@@ -59,6 +57,7 @@ def mouse():
     for i in range(pos4[0],pos4[1]):
         for j in range(pos4[2],pos4[3]):
             scene.set_voxel(vec3(i, j, 20), 2, vec3(1,1,1))
+
 def tear():
     # tear1 
     pos4 = (-13,-9,-10,0) #xleft,xright,ydown,yup
@@ -70,6 +69,7 @@ def tear():
     for i in range(pos4[0],pos4[1]):
         for j in range(pos4[2],pos4[3]):
             scene.set_voxel(vec3(i, j, 17), 2, vec3(0.647,0.78,0.9))
+            
 def body():
     color = vec3(0.788,0.627,0.666) # 201 160 170
     pos = (0,-20,0)
